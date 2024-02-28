@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: message-api
+#  cloud:
+#    config:
+#      enabled: false
+server:
+  port: 8081
+
+# configuracion para actuator
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  info:
+    env:
+      enabled: true
+
+message: Holis este es un mensaje, como estais
+
